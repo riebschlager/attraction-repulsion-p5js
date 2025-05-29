@@ -85,7 +85,7 @@ const sketch = p => {
         if(e.key == 'c' || e.key == 'C') {
 
         }
-        if(e.key == ' ') attractors.clear();
+        if(e.key == ' ') attractors.length = 0;
         if(e.key == 'q') physics.clear();
         if(e.key == 'p' || e.key == 'P') {
             for(let i = 0; i < 100; i++) addParticle();
