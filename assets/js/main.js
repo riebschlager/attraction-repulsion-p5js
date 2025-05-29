@@ -20,6 +20,7 @@ class Particle extends VerletParticle2D {
     // float colorNoise;
     // float maxRadius;
 
+    // Example constructor from the original Processing (Java) sketch:
     // public Particle(float _x, float _y, float _w, float _maxRadius) {
     //     super(_x, _y, _w);
     //     radiusNoise = random(1000);
@@ -43,6 +44,7 @@ class Attractor extends AttractionBehavior {
     // float xNoise, yNoise, strengthNoise;
     // int behavior;
 
+    // Example constructor from the original Processing (Java) sketch:
     // public Attractor(Vec2D _position, float _radius, float _strength, float _jitter, int _behavior) {
     //     super(_position, _radius, _strength, _jitter);
     //     position = _position;
