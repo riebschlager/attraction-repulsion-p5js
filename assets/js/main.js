@@ -14,19 +14,6 @@ class Particle extends VerletParticle2D {
         this.colorNoise = Math.random() * 1000;
         this.maxRadius = maxRadius;
     }
-
-    // int pixel1, pixel2;
-    // float radiusNoise;
-    // float colorNoise;
-    // float maxRadius;
-
-    // Example constructor from the original Processing (Java) sketch:
-    // public Particle(float _x, float _y, float _w, float _maxRadius) {
-    //     super(_x, _y, _w);
-    //     radiusNoise = random(1000);
-    //     colorNoise = random(1000);
-    //     maxRadius = _maxRadius;
-    // }
 }
 
 class Attractor extends AttractionBehavior {
@@ -39,20 +26,6 @@ class Attractor extends AttractionBehavior {
         this.strengthNoise = Math.random() * 1000;
         this.behavior = behavior;
     }
-
-    // Vec2D position;
-    // float xNoise, yNoise, strengthNoise;
-    // int behavior;
-
-    // Example constructor from the original Processing (Java) sketch:
-    // public Attractor(Vec2D _position, float _radius, float _strength, float _jitter, int _behavior) {
-    //     super(_position, _radius, _strength, _jitter);
-    //     position = _position;
-    //     xNoise = random(1000);
-    //     yNoise = random(1000);
-    //     strengthNoise = random(1000);
-    //     behavior = _behavior;
-    // }
 }
 
 
@@ -133,10 +106,6 @@ const sketch = p => {
             a.strengthNoise += 0.005;
             a.xNoise += 0.0025;
             a.yNoise += 0.0025;
-            //if(a.behavior == 1) p.fill(0, 200, 0);
-            //if(a.behavior == -1) p.fill(200, 0, 0);
-            //p.strokeWeight(0.5);
-            //p.ellipse(a.position.x, a.position.y, 5, 5);
         }
     };
 
